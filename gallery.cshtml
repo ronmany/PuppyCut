@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "גלרית תמונות";
+    <script>
+        $(document).ready(function () {
+            $("#breeds").addClass("active");
+        });
+    </script>
+		<meta charset="utf-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="stylesheet" type="text/css" href="~/Content/jb.css" />
+<style>    
+    .paws { opacity: 0.0; }
+    .paws2 { opacity: 0.0; }
+</style>
+}
+
+<h1>תצוגת התספורות שלנו</h1>
+<!--START JUICEBOX EMBED-->
+		<script src="Scripts/juicebox.js"></script>
+		<script>
+			new juicebox({
+				containerId : 'juicebox-container',
+                configUrl : '/config.xml',
+                galleryWidth : '100%'
+			});
+
+		</script>
+		<div id="juicebox-container"></div>
+		<!--END JUICEBOX EMBED-->

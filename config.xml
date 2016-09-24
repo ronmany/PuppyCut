@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery
+	galleryTitle="פאפי קאט - גלרית תמונות"
+    useFlickr="True"
+    flickrUserName="PuppyCut1"
+    showOpenButton="False"
+    showExpandButton="False"
+    backgroundColor="c8d1d6"
+    imageClickMode="NONE">
+</juiceboxgallery>

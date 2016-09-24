@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@Page.Title - פאפי קאט - מספרת הכלבים המובילה באשקלון</title>
+                <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+        <script src="~/Scripts/jquery-ui-1.8.20.js"></script>
+        <script src="~/Scripts/modernizr-2.5.3.js"></script>
+        <script type="text/javascript" src="~/Scripts/jquery.transform-0.9.3.min_.js"></script>
+		<script type="text/javascript" src="~/Scripts/jquery.RotateImageMenu.js"></script>
+        <meta name="viewport" content="width=device-width" />
+        <meta name="keywords" content="מספרת כלבים, ספר כלבים, ספרית כלבים, סלון יופי וטיפוח לכלבים, מספרת חתולים, טיפוח כלבים, נשירת שיער כלבים" />
+        <meta name="rights" content="&amp;copy 2012 Puppy Cut" />
+        <meta name="description" content="פאפי קאט - סלון יופי וטיפוח לכלבים. אצלינו הטיפול נעשה באהבה,עם יד מאוד מקצועית. במקום שמאובזר ותוכנן במיוחד לחיות מחמד." />
+
+    </head>
+    <body>
+        <!-- facebook like button -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <header>
+            <div id="content-wrapper">
+
+                <h2 class="site-subtitle">סלון יופי וטיפוח לכלבים וחתולים  -  טלפון: 052-6202562</h2>
+                <p class="site-title"><a href="~/"><img src="../Images/logo_no_bg.png" alt="פאפי קאט מספרת כלבים" 
+                 title="מספרת הכלבים הטובה ביותר באשקלון" style="border-style:none"></a></p>
+                
+                <!-- Facebook Like button..-->
+                <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" 
+                data-show-faces="false" data-font="tahoma"></div>
+                
+                <nav>
+                    <ul id="menu">
+                        <li id="home"><a href="~/Default.cshtml">עמוד הבית</a></li>
+                        <li id="about"><a href="~/About.cshtml">אודותינו</a></li>
+                        <li id="articles"><a href="~/articles.cshtml">מאמרים</a></li>
+                        <li id="gallery"><a href="~/gallery.cshtml">תמונות</a></li>
+                        <li id="contact"><a href="~/Contact.cshtml">כתובת</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+        <div id="body">
+        <div class ="paws" style="top:160px; left:100px;"><img src="../Images/paws.png" alt="dog paws"></div>
+        <div class ="paws2" style="top:260px; left:250px;"><img src="../Images/paws.png" alt="dog paws"></div>
+        <div class ="paws" style="top:360px; left:400px;"><img src="../Images/paws.png" alt="dog paws"></div>
+        <div class ="paws2" style="top:460px; left:550px;"><img src="../Images/paws.png" alt="dog paws"></div>
+        <div class ="paws" style="top:560px; left:700px;"><img src="../Images/paws.png" alt="dog paws"></div>
+        <div class ="paws" style="top:660px; left:850px;"><img src="../Images/paws.png" alt="dog paws"></div>
+
+
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+			<div class="colleft">
+				<!-- Column left start -->
+                <img src="../Images/i-love-dogs-grooming.png" alt="i love dogs grooming" />
+                <br /> &copy; @DateTime.Now.Year -פאפי קאט
+            </div>
+                
+            <div class="colright">
+                <!-- Column 4 start -->
+                <h4>צור קשר</h4>
+                <p><a href="Contact.cshtml">מפת הגעה למספרה</a></p>
+                <p><a href="http://www.facebook.com/MsprtKlbymWhtwlym">דף הFacebook שלנו</a></p>
+                <p><a href="http://puppy-cut.blogspot.com">הבלוג שלנו</a></p>
+                <p><a href="mailto:puppy1132@gamil.com">שלח לנו דוא"ל</a></p>
+            </div>  
+            <div class="colmid1">
+                <!-- Column 3 start -->
+                <h3>יהדות ספרד 19, אשקלון</h3>
+                <h4>מספרת הכלבים הטובה באשקלון</h4>
+            </div>
+            <div class="colmid2">
+                <!-- Column 2 start -->
+                <h4>מידע ומאמרים</h4>
+                <p><a href="~/breeds.cshtml">סוגי פרווה</a></p>
+                <p><a href="~/flees.cshtml">פרעושים וקרציות</a></p>
+                <p><a href="~/catbath.cshtml">אמבטיה לחתולים</a></p>
+                 <p><a href="~/gallery.cshtml">גלרית תמונות</a></p>
+                <p></p>
+            </div>
+          
+        </footer>
+        @RenderSection("Scripts", required: false)
+
+    </body>
+</html>

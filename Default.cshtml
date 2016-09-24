@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Home Page";    
+    <script>
+        $(document).ready(function () {
+            $("#home").addClass("active");
+        });
+    </script>
+}
+@section featured {
+			<!-- Elastislide Carousel -->
+            <link rel="stylesheet" type="text/css" href="~/Content/elastislide.css" />
+			<div id="carousel" class="es-carousel-wrapper">
+				<div class="es-carousel">
+					<ul>
+						<li><a href="#"><img src="Images/rotator/1.jpg" alt="image1" /></a></li>
+						<li><a href="#"><img src="Images/rotator/2.jpg" alt="image2" /></a></li>
+						<li><a href="#"><img src="Images/rotator/3.jpg" alt="image3" /></a></li>
+						<li><a href="#"><img src="Images/rotator/4.jpg" alt="image4" /></a></li>
+						<li><a href="#"><img src="Images/rotator/5.jpg" alt="image5" /></a></li>
+						<li><a href="#"><img src="Images/rotator/6.jpg" alt="image6" /></a></li>
+						<li><a href="#"><img src="Images/rotator/7.jpg" alt="image7" /></a></li>
+						<li><a href="#"><img src="Images/rotator/8.jpg" alt="image8" /></a></li>
+						<li><a href="#"><img src="Images/rotator/9.jpg" alt="image9" /></a></li>
+						<li><a href="#"><img src="Images/rotator/10.jpg" alt="image10" /></a></li>
+					</ul>
+				</div>
+			</div>
+        	<script type="text/javascript" src="~/Scripts/jquery.easing.1.3.js"></script>
+		    <script type="text/javascript" src="~/Scripts/jquery.elastislide.js"></script>
+			<script type="text/javascript">
+			
+			$('#carousel').elastislide({
+				speed       : 1500,
+                easing      : 'easeInOutExpo',
+                imageW 		: 300,
+				minItems	: 3,
+				margin		: 2,
+				border		: 0,
+				current		: 12,
+                AutoSlideIntervl: 7000
+			});
+			
+		    </script>
+			<!-- End Elastislide Carousel -->
+
+}
+<section class="featured">
+<section class="callus">
+<!--<iframe src="http://www.google.com/talk/service/badge/Show?tk=z01q6amlqksbrhfe649ofvslsin4jh6rotdulai0m88qfal75ebj727ukk49o3fmbf8d6qq6ol6g381pj6ccmi7aiuhsfljmp32v3c3hhmteoonb6i8nsnmes2sdaefcatc1vdusbaoe2rpbhdme81arq084rmoi1ga9g7efi&amp;w=190&amp;h=60" width="190" height="60" border="none" ></iframe> -->
+<img src="../Images/dogphone.png" alt="תתקשר לתספורת כלבים" title="לזימון תור: 052-6202562" />
+<p><a href="~/Contact.cshtml">מפת הגעה למספרה</a></p>
+</section>   
+        <h1>פאפי קאט הוא סלון יופי וטיפוח לכלבים וחתולים</h1>
+<p>המספרה מנוהלת ע"י אניה טימנוביץ מוסמכת ובעלת תעודות והכשרות רלוונטיות.
+לאניה ניסיון של 12 שנים בתחום האילוף ורקע בענף הכלבנות בצה"ל, מומחית בעיצוב תספורות ועיצובים לכלבים.
+התמחות בתספורות גזע לכל גזעי הכלבים ופיתרונות לבעיות נשירה ובעיות בעור.
+מספרת הכלבים מעוצבת במיוחד לכלבים וחתולים ומאובזרת בציוד החדיש ביותר.</p>
+<p>אצלינו הטיפול נעשה באהבה ומקצועיות.</p>
+<p>אתם מוזמנים לבקר <a href="~/gallery.cshtml">בגלרית התמונות</a> 
+    ולהתרשם מהתספורות שכבר ביצענו.</p>   
+ <p>&nbsp;</p>
+<div id="readabout">
+    <h3>הפרווה נושרת?</h3>
+לכלבים וחתולים נושרת הפרווה כל השנה.יש תקופות שהפרווה נושרת בצורה מסיבית יותר.
+ישנם גזעים שפרוותם נושרת פעמיים בשנה בעונות המעבר, אביב וסתיו. ויש גזעים שפרוותם נושרת באותה הצורה במשך כל השנה.
+לכלבים סוגי פרוות שונות: חלקה, מתולתלת, ארוכה, משית, זיפית, כפולה, וצפופה.
+    <a href="~/breeds.cshtml"><img src="../Images/more.png" alt="קרא עוד על נשירת פרווה" title="קרא/י עוד" /></a>
+</div>
+</section>
